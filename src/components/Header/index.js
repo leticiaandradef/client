@@ -37,13 +37,16 @@ export default function Header() {
 
             <ul className={`${styles.lista} ${menuOpen ? styles.open : ''}`}>
                 <li>
+                    <Link href="/">Home</Link>
+                </li>
+                <li>
                     <Link href="/">Médicos</Link>
                 </li>
                 <li>
-                    <Link href="/sobre">Consultórios</Link>
+                    <Link href="/">Pacientes</Link>
                 </li>
                 <li>
-                    <Link href="/personagens">Agendamentos</Link>
+                    <Link href="/">Consultas</Link>
                 </li>
             </ul>
         </header>

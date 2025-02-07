@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
 .header {
-    background-color: hsl(205, 100%, 79%);
+    background-color: rgb(205, 235, 255);
     color: #0f73ad;
     border-bottom: 2px solid #136fb1;
     padding: 10px 20px;
@@ -30,6 +32,7 @@
     }
 
     .lista {
+        font-family: "Delius Swash Caps", serif;
         font-size: 1vh;
         list-style: none;
         display: flex;
@@ -45,12 +48,19 @@
     }
 }
 
+.lista:hover{
+    color: #42a7ff;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
 @media (max-width: 600px) {
     .menuIcon {
         display: block;
     }
 
     .lista {
+        font-family: "Delius Swash Caps", serif;
         list-style: none;
         display: flex;
         position: absolute;
@@ -90,6 +100,7 @@
 
 .lista a {
     gap: 0px;
+    font-family: "Delius Swash Caps", serif;
     text-decoration: none;
     font-size: 18px;
 }
