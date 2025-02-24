@@ -32,8 +32,8 @@ export default function Header() {
                         onMouseEnter={() => setHoveredItem("Medico")}
                         onMouseLeave={() => setHoveredItem(null)}
                     >
-                        <Link href="/medicos">Medico</Link>
-                        {hoveredItem === "Medico" && (
+                        <Link href="/medicos">Médico</Link>
+                        {hoveredItem === "Médico" && (
                             <ul className={styles.submenu}>
                                 <li><Link href="./medicos">Listar</Link></li>
                                 <li><Link href="/medicos/adicionar">Adicionar</Link></li>

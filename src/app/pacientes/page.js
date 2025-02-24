@@ -85,7 +85,7 @@ export default function Pacientes() {
                     ) : (
                         <tr>
                             <td colSpan="5" className={styles.td}>
-                                Nenhum médico encontrado.
+                                Nenhum paciente encontrado.
                             </td>
                         </tr>
                     )}

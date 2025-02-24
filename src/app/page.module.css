@@ -1,33 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius+Swash+Caps&display=swap');
 
-.h1{
-  margin-top: 20px;
-  color: rgb(127, 165, 197);
-  text-align: center;
-  font-family: "Delius Swash Caps", serif;
+.h1 {
+    margin-top: 20px;
+    color: rgb(127, 165, 197);
+    text-align: center;
+    font-family: "Delius Swash Caps", serif;
 }
 
-.p{
-  font-family: "Akaya Kanadaka", serif;
-  text-align: center;
-  width: 50%;
-  margin: auto;
-  font-size: 23px;
-  padding: 10px;
+.p {
+    font-family: "Akaya Kanadaka", serif;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 23px;
+    padding: 10px;
 }
 
-.agendar{
-  font-family:"Akaya Kanadaka", serif;
-  color: rgb(113, 147, 175) ;
+.agendar {
+    font-family:"Akaya Kanadaka", serif;
+    color: rgb(113, 147, 175) ;
 }
 
-.button{
-  background-color: aliceblue;
-  margin-top: 20px;
-  padding: 5px 15px;
-  display: block;
-  margin: auto;
-  border-radius: 30px;
-  border-color: aqua;
+.button {
+    background-color: aliceblue;
+    margin-top: 20px;
+    padding: 5px 15px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    border-color: rgb(127, 255, 244);
+    box-shadow: 0 4px 10px rgb(150, 229, 255);
 }

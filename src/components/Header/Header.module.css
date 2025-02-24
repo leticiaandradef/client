@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 
-/* Estilos do header */
 .header {
     display: flex;
     font-size: 25px;
@@ -10,6 +9,7 @@
     padding: 6px;
     background-color: rgb(180, 228, 255);
     border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgb(70, 178, 213);
 }
 
 .logo {
@@ -28,23 +28,23 @@
 .navMenu {
     display: flex;
     align-items: center;
-    gap: 15px; /* Espaçamento mais compacto entre os itens */
+    gap: 15px; 
     transition: transform 0.3s ease;
-    transform: translateX(0); /* Inicia com o menu visível */
+    transform: translateX(0); 
 }
 
 .lista {
     list-style: none;
     display: flex;
-    gap: 15px; /* Ajuste no espaçamento entre os itens */
+    gap: 15px; 
     margin-right: 20px;
 }
 
 .li {
     position: relative;
-    padding: 5px 10px; /* Menor padding para os itens */
+    padding: 5px 10px;
     cursor: pointer;
-    font-size: 16px; /* Ajuste no tamanho da fonte */
+    font-size: 16px; 
 }
 
 .submenu {
@@ -73,7 +73,6 @@
     background: #f4f4f4;
 }
 
-/* Responsividade: botão de menu e menu em telas pequenas */
 @media (max-width: 525px) {
     .menuButton {
         display: block;

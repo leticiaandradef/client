@@ -16,8 +16,9 @@
     border: 1px solid black;
     background-color: rgb(167, 223, 255);
     font-family: "Akaya Kanadaka", serif;
-    border-radius: 15px;
+    border-radius: 13px;
     border-color: aliceblue;
+    box-shadow: 0 4px 10px rgb(0, 191, 255);
 }
 
 .th {
@@ -44,6 +45,7 @@
     border-color: rgb(127, 255, 244);
     font-family: "Akaya Kanadaka", serif;
     background-color: aliceblue;
+    box-shadow: 0 4px 10px rgb(150, 229, 255);
 }
 
 .input {
