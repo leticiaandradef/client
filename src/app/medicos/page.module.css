@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius+Swash+Caps&display=swap');
+
+.h1 {
+    text-align: center;
+    color: rgb(73, 150, 195);
+    font-family: "Delius Swash Caps", serif;
+    padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.table {
+    margin: auto;
+    width: 74%;
+    border: 1px solid black;
+    background-color: rgb(167, 223, 255);
+    font-family: "Akaya Kanadaka", serif;
+}
+
+.th {
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+}
+
+.td {
+    padding: 13px 16px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.button {
+    margin-left: 175px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 15px;
+    font-family: "Akaya Kanadaka", serif;
+    background-color: rgb(173, 225, 255);
+}
+
+.input {
+    width: 97%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.input::placeholder {
+    font-family: "Akaya Kanadaka", serif;
+    padding: 5px;
+}
+
+.divBuscar {
+    background-color:  rgb(94, 184, 237);
+    margin: auto;
+    width: 74%;
+    padding: 20px 4px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .table {
+        width: 100%; 
+        overflow-x: auto;
+        display: block; 
+    }
+}

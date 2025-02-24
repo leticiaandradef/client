@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+/* Estilos do header */
+.header {
+    display: flex;
+    font-size: 25px;
+    font-family: "Delius Swash Caps", serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    background-color: rgb(180, 228, 255);
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    height: auto;
+    margin-left: 17px;
+}
+
+.menuButton {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento mais compacto entre os itens */
+    transition: transform 0.3s ease;
+    transform: translateX(0); /* Inicia com o menu visível */
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Ajuste no espaçamento entre os itens */
+    margin-right: 20px;
+}
+
+.li {
+    position: relative;
+    padding: 5px 10px; /* Menor padding para os itens */
+    cursor: pointer;
+    font-size: 16px; /* Ajuste no tamanho da fonte */
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    list-style: none;
+    padding: 5px 0;
+    display: none;
+    z-index: 10;
+}
+
+.li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.submenu li:hover {
+    background: #f4f4f4;
+}
+
+/* Responsividade: botão de menu e menu em telas pequenas */
+@media (max-width: 525px) {
+    .menuButton {
+        display: block;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .navMenu {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(137, 199, 235);
+        border-top: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 20;
+        transform: translateX(-100%); 
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .navMenu.showMenu {
+        transform: translateX(0);
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 30px; 
+    }
+
+    .li {
+        padding: 5px;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    .submenu {
+        position: static;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .submenu li {
+        padding: 10px;
+        text-align: center;
+    }
+}
